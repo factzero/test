@@ -26,7 +26,7 @@ if __name__ == '__main__':
             intensity = int(cvHist[h]*hpt/maxVal)
             cv2.line(cvImgHist, (h, 256), (h, 256-intensity), [0, 0, 255])
         cv2.imshow('Img', cvImgShow)
-        cv2.imshow('ImgHist', cvImgHist)
+        #cv2.imshow('ImgHist', cvImgHist)
         cv2.waitKey(100)
 
     cv2.destroyAllWindows()
